@@ -2,7 +2,7 @@
 
 body{
   height: 100vh;
-  overflow-y: hidden;
+  overflow: hidden;
   background-color: #021110;
   display: flex;
   flex-direction: column;
@@ -22,15 +22,18 @@ body{
   top: 50px;
   left: 50%;
   transform: translateX(-50%);
-  z-index: -10;
+  z-index: 9;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
 }
 .brand{
   position: absolute;
   left: 50%;
   bottom: 80px;
   transform: translateX(-50%);
-  color: goldenrod;
-  z-index: -10;
+  color: #bba14f;
+  z-index: 7;
 }
 .analog-container{
   height: 50vh;
@@ -39,9 +42,10 @@ body{
 .clock-circle{
   height: 400px;
   width: 400px;
-  border: 4px solid #eee;
+  border: 4px solid #bba14f;
   border-radius: 50%;
   position: relative;
+  background-image: linear-gradient(to top, #444, #555);
 }
 .clock-circle .number{
   --rotate: 0deg;
@@ -75,7 +79,7 @@ body{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: 11;
 }
 .sec, 
 .min, 
@@ -87,19 +91,21 @@ body{
   transform: translateY(-50%) rotate(-90deg);
   transform-origin: left center;
   border-radius: 5px;
+  background-color: #eee;
 }
 .sec{
+  height: 2px;
   width: 165px;
   background-color: crimson;
-  z-index: -3;
+  z-index: 10;
 }
 .min{
+  height: 4px;
   width: 140px;
-  background-color: #eee;
-  z-index: -2;
+  z-index: 9;
 }
 .hour{
   width: 80px;
-  background-color: #aaa;
+  z-index: 8;
 }
 

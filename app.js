@@ -8,6 +8,8 @@ let sec = time.getSeconds();
 let min = time.getMinutes();
 let hour = time.getHours();
 
+rotateAnalog();
+showClock();
 setInterval(showClock, 1000);
 setInterval(rotateAnalog, 1000);
 

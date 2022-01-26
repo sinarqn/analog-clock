@@ -43,80 +43,29 @@ body{
   border-radius: 50%;
   position: relative;
 }
-.clock-circle div.big{
-  height: 5px;
-  width: 30px;
-  background-color: #eee;
+.clock-circle .number{
+  --rotate: 0deg;
   position: absolute;
-  border-radius: 5px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  color: #eee;
+  font-size: 20px;
+  transform: rotate(var(--rotate));
+  font-family: sans-serif;
 }
-#top{
-  left: 50%;
-  top: 0;
-  transform: translate(-50%, 200%) rotate(90deg);
-}
-#right{
-  top: 50%;
-  right: 0;
-  transform: translate(10%, -50%);
-}
-#bottom{
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, -200%) rotate(90deg);
-}
-#left{
-  top: 50%;
-  left: 0;
-  transform: translate(-10%, -50%);
-}
-.clock-circle div.little{
-  height: 3px;
-  width: 20px;
-  background-color: #ddd;
-  position: absolute;
-  border-radius: 5px;
-}
-#one{
-  left: 290px;
-  top: 35px;
-  transform: rotate(-60deg);
-}
-#two{
-  left: 355px;
-  top: 100px;
-  transform: rotate(-30deg);
-}
-#four{
-  left: 355px;
-  bottom: 100px;
-  transform: rotate(30deg);
-}
-#five{
-  left: 290px;
-  bottom: 35px;
-  transform: rotate(60deg);
-}
-#seven{
-  right: 290px;
-  bottom: 35px;
-  transform: rotate(-60deg);
-}
-#eight{
-  right: 355px;
-  bottom: 100px;
-  transform: rotate(-30deg);
-}
-#ten{
-  right: 355px;
-  top: 100px;
-  transform: rotate(30deg);
-}
-#eleven{
-  right: 290px;
-  top: 35px;
-  transform: rotate(60deg);
-}
+.clock-circle .number1{--rotate: 30deg;}
+.clock-circle .number2{--rotate: 60deg;}
+.clock-circle .number3{--rotate: 90deg;}
+.clock-circle .number4{--rotate: 120deg;}
+.clock-circle .number5{--rotate: 150deg;}
+.clock-circle .number6{--rotate: 180deg;}
+.clock-circle .number7{--rotate: 210deg;}
+.clock-circle .number8{--rotate: 240deg;}
+.clock-circle .number9{--rotate: 270deg;}
+.clock-circle .number10{--rotate: 300deg;}
+.clock-circle .number11{--rotate: 330deg;}
+
 .middle-dot{
   border-radius: 50%;
   height: 15px;
